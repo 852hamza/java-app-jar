@@ -14,4 +14,4 @@ COPY java-maven-app-1.1.0-SNAPSHOT.jar /rmi-rpm-api/rmi-rpm-api-version.jar
 # RUN chmod -R 777 /rmi
 
 #ENTRYPOINT ["/bin/bash", "-c", "sleep infinity"]
-ENTRYPOINT ["java","-jar","$(pwd)/target/java-maven-app-1.1.0-SNAPSHOT.jar /rmi-rpm-api/rmi-rpm-api-version.jar"]
+ENTRYPOINT ["java","-jar","java-maven-app-1.1.0-SNAPSHOT.jar"]
