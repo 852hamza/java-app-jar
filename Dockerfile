@@ -1,5 +1,5 @@
 FROM openjdk:17
-COPY $(pwd)/target/java-maven-app-1.1.0-SNAPSHOT.jar /rmi-rpm-api/rmi-rpm-api-version.jar
+COPY java-maven-app-1.1.0-SNAPSHOT.jar /rmi-rpm-api/rmi-rpm-api-version.jar
 # COPY ./application.properties /rmi-rpm-api/application.properties
 # COPY ./logback-spring.xml* ./root.cer* /rmi-rpm-api/
 # COPY ./rmi.p12  /etc/pki/rmi/rmi.p12 
