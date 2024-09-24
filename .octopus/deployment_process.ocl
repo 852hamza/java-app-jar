@@ -1,0 +1,17 @@
+step "create-a-jar-file" {
+    name = "create a jar file "
+    properties = {
+        Octopus.Action.TargetRoles = "java-deployment-openshift-targets"
+    }
+
+    action {
+        action_type = "Octopus.Script"
+        properties = {
+            Octopus.Action.RunOnServer = "false"
+            Octopus.Action.Script.ScriptBody = "mvn clean package"
+            Octopus.Action.Script.ScriptSource = "Inline"
+            Octopus.Action.Script.Syntax = "Bash"
+        }
+        worker_pool_variable = ""
+    }
+}
